@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>QDriverStation</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link rel="icon" type="image/png" href="favicon.png">
+   </head>
+   <body>
+      <div class="video-ext-container">
+         <div class="video-container">
+            <video autoplay loop></video>
+         </div>
+      </div>
+      <header>
+         <img src="img/logo.png" id="logo">
+         <h2>QDriverStation</h2>
+         <h3>The open-source, cross-platform FRC Driver Station</h3>
+         <table cellspacing="10">
+           <tr>
+               <td><a href="https://github.com/FRC-Utilities/QDriverStation/releases/latest" class="button" target="_blank">Get the Installer</a></td>
+               <td><a href="https://github.com/FRC-Utilities/QDriverStation" class="button" target="_blank">Check on GitHub</a></td>
+            </tr>
+         </table>
+      </header>
+      <article>
+         <section>
+            <h4>What is the QDriverStation?</h4>
+            <p>
+               The QDriverStation is a free and open-source alternative to the FRC Driver Station. It runs on the major operating systems (Windows, Mac and Linux) and allows teams to operate 2010-2014 robots and 2015-2016 robots. The QDriverStation is designed in a modular approach, it uses the <a href="https://github.com/FRC-Utilities/LibDS" target="_blank">LibDS</a> to handle networking operations and <a href="https://github.com/alex-spataru/QJoysticks" target="_blank">QJoysticks</a> to handle joystick input.
+            </p>
+         </section>
+         <section>
+            <h4>Can I use the QDriverStation in an official competition?</h4>
+            <p>
+               <strong>TLDR;</strong> No. The FTA would not allow it.
+            </p>
+            <br/>
+            <p>
+               The QDriverStation is meant to help teams to use the robots in non-offical events, such as a presentation or code testing. Even if the QDriverStation is able to communicate with <a href="http://archive.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FRC/Game_and_Season__Info/2013/FMSWhitePaper_RevA.pdf" target="_blank">FMS</a>, FIRST does not allow teams to use third-party Driver Stations in the field to ensure optimal safety for everyone.
+            </p>
+         </section>
+         <section>
+            <h4>What safety precautions should I take while using the QDriverStation</h4>
+            <p>
+               <strong>TLDR;</strong> Check the joystick mappings!
+            </p>
+            <br/>
+            <p>
+               <strong>The QDriverStation may map the joysticks differently than the FRC Driver Station</strong>, namely because we use <a href="https://libsdl2.org" target="_blank">SDL</a> instead of <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ee417014(v=vs.85).aspx" target="_blank">XInput</a>. You should check the joysticks tab before enabling the robot.
+               If you are not sure, use the virtual joystick before attempting to enable the robot with a real joystick. Another option would be to <strong>limit the robot's area of movement while experimenting</strong> with the QDriverStation.
+            </p>
+         </section>
+         <section>
+            <h4>What about emergency stop?</h4>
+            <p>
+               The keyboard shortcuts work the same as in the official FRC Driver Station. Just press <code>SPACE</code> to e-stop the robot.
+            </p>
+            <br/>
+            <p>
+               <strong>NOTE:</strong> The QDriverStation window needs to be <strong>focused</strong> in order to e-stop the robot.
+            </p>
+         </section>
+         <section>
+            <h4>Documentation</h4>
+            <p>Developer documentation for the QDriverStation and its sub-projects can be found <a href="documentation/" target="_blank">here</a>, have a nice reading!</p>
+         </section>
+         <section>
+            <h4>More questions?</h4>
+            <p><a href="http://github.com/alex-spataru">Contact me</a> for any doubts/questions that you may have.</p>
+         </section>
+      </article>
+      <footer>
+         <center>
+            <p>This project is developed and maintained by <a href="https://github.com/alex-spataru">Alex Spataru</a>. Other contributors are listed <a href="https://github.com/FRC-Utilities/QDriverStation/blob/master/CONTRIBUTORS.md"  target="_blank">here</a>.</p>
+            <p> Website design by <a href="https://github.com/ErikBoesen" target="_blank">Erik Boesen</a>, who develops the <a href="http://frcdashboard.github.io/" target="_blank">FRC Dashboard</a>.</p>
+         </center>
+      </footer>
+      <script src="scripts.js"></script>
+   </body>
+</html>
